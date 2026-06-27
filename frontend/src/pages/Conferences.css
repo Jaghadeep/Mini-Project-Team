@@ -1,0 +1,206 @@
+.conferences-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.conf-hero {
+  background-color: var(--dark-color);
+  background-image: linear-gradient(135deg, rgba(4, 30, 66, 0.95) 0%, rgba(0, 113, 206, 0.8) 100%),
+                    url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 100px 0 120px 0;
+  text-align: center;
+}
+
+.conf-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.conf-hero-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+}
+
+.conf-hero-content p {
+  font-size: 18px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* Conference Cards List */
+.conf-list-section {
+  background-color: var(--bg-light);
+}
+
+.conf-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conf-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+.conf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0, 113, 206, 0.2);
+}
+
+.conf-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.conf-mode-badge {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 6px;
+  background-color: rgba(0, 113, 206, 0.08);
+  color: var(--primary-color);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.conf-card-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark-color);
+  line-height: 1.3;
+}
+
+.conf-details-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.conf-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.conf-themes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--bg-light);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.conf-themes h4 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--dark-color);
+}
+
+.theme-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.theme-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.conf-reg-btn {
+  align-self: flex-start;
+  padding: 12px 36px;
+  border-radius: 24px;
+}
+
+@media (max-width: 768px) {
+  .conf-card {
+    padding: 24px;
+  }
+  .conf-reg-btn {
+    width: 100%;
+  }
+  .form-grid-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Modal text adjustments */
+.modal-conf-name {
+  font-size: 15px;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-grid-row {
+  gap: 16px;
+}
+
+.reg-success-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+  gap: 16px;
+}
+
+.reg-success-view h3 {
+  color: #10b981;
+}
+
+.reg-error-alert {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #ef4444;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}

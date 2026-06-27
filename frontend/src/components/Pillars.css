@@ -1,0 +1,93 @@
+.pillars-section {
+  background-color: var(--bg-white);
+  padding: 100px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pillars-heading-wrap {
+  text-align: center;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.pillars-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--dark-color);
+}
+
+.pillars-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.pillars-grid {
+  margin-top: 16px;
+}
+
+.pillar-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+  background-color: var(--bg-white);
+  border-color: rgba(0, 113, 206, 0.3);
+  box-shadow: var(--shadow-lg);
+}
+
+.pillar-icon-wrap {
+  width: 56px;
+  height: 56px;
+  background-color: rgba(0, 113, 206, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: all 0.3s;
+}
+
+.pillar-card:hover .pillar-icon-wrap {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.pillar-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.pillar-card-sub {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 0.1em;
+}
+
+.pillar-card-title {
+  font-size: 22px;
+  font-weight: 750;
+  color: var(--dark-color);
+}
+
+.pillar-card-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
